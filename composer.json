@@ -1,49 +1,43 @@
 {
-  "name": "andreaortogni/laravel-url-rewrites",
-  "description": "Easy URL rewrites in your Laravel application",
-  "keywords": [
-    "url",
-    "rewrite",
-    "laravel"
-  ],
-  "homepage": "https://github.com/andreaortogni/laravel-url-rewrites",
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "Ruthger Idema",
-      "email": "ruthger.idema@gmail.com",
-      "homepage": "https://ide.ma"
+    "name": "andreaortogni/laravel-url-rewrites",
+    "description": "url rewrites for laravel 9",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "andreaortogni",
+            "email": "andreaortogni@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^7.2",
+        "laravel/framework": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0",
+        "orchestra/testbench": "~3.8.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "RuthgerIdema\\UrlRewrite\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+          "RuthgerIdema\\UrlRewrite\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+          "providers": [
+            "RuthgerIdema\\UrlRewrite\\ServiceProvider"
+          ]
+        }
     }
-  ],
-  "require": {
-    "php": "^7.2",
-    "laravel/framework": "*"
-  },
-  "require-dev": {
-    "phpunit/phpunit": "^8.0",
-    "orchestra/testbench": "~3.8.0"
-  },
-  "autoload": {
-    "psr-4": {
-      "RuthgerIdema\\UrlRewrite\\": "src"
-    }
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "RuthgerIdema\\UrlRewrite\\Test\\": "tests"
-    }
-  },
-  "scripts": {
-    "test": "vendor/bin/phpunit"
-  },
-  "config": {
-    "sort-packages": true
-  },
-  "extra": {
-    "laravel": {
-      "providers": [
-        "RuthgerIdema\\UrlRewrite\\ServiceProvider"
-      ]
-    }
-  }
 }
